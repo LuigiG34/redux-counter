@@ -3,6 +3,8 @@ import { createStore } from 'redux';
 const initialState = { counter: 0, show: true };
 
 const counterReducer = (state = initialState, action) => {
+    // Never mutate the existing state always override it with Redux
+    // It can lead to bugs, unpredictable behavior
     if(action.type === "increment") {
         return {
             counter: state.counter + 1,
