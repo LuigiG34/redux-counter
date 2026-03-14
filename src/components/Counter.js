@@ -17,7 +17,7 @@ const Counter = () => {
     };
 
     const toggleCounterHandler = () => {
-        dispatch({type: 'toggle_show'});
+        dispatch({type: 'toggleCounter'});
     };
 
     return (
